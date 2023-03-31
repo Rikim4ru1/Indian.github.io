@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Indian Foodtruck</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="imagenes/logo blanco 200px .ico">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="caja">
+            <h1><img src="imagenes/logo gris 200px.png" alt="logo"></h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="productos.html">Productos</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <form class="formulario">
+            <label for="nombreapellido">Nombre y Apellido</label>
+            <input type="text" id="nombreapellido" class="input-padron" required>
+
+            <label for="correoelectronico">Correo Electrónico</label>
+            <input type="email" id="correoelectronico" class="input-padron" required placeholder="email@dominio.com">
+
+            <label for="telefono">Teléfono</label>
+            <input type="tel" id="telefono" class="input-padron" required placeholder="(XX) XXXX XXXX">
+
+            <label for="mensaje">Mensaje</label>
+            <textarea cols="70" rows="10" id="mensaje" class="input-padron" required></textarea>
+
+            <fieldset>
+                <legend>¿Cómo le gustaría que lo contactemos por reservas?</legend>
+
+                <label for="radio-email"><input type="radio" name="contacto" value="email"
+                        id="radio-email">Email</label>
+
+                <label for="radio-telefono"><input type="radio" name="contacto" value="telefono"
+                        id="radio-telefono">Teléfono</label>
+
+                <label for="radio-whatsapp"><input type="radio" name="contacto" value="whatsapp" id="radio-whatsapp"
+                        checked>WhatsApp</label>
+
+            </fieldset>
+
+            <fieldset >
+                <legend>¿En cuál horario prefiere que le enviemos su pedido?</legend>
+                <select>
+                    <option class="horario">20:00hs</option>
+                    <option class="horario">20:30hs</option>
+                    <option class="horario">21:00hs</option>
+                    <option class="horario">21:30hs</option>
+                    <option class="horario">22:00hs</option>
+                    <option class="horario">22:30hs</option>
+                    <option class="horario">23:00hs</option>
+                    <option class="horario">23:30hs</option>
+                </select>
+            </fieldset>
+
+            <label class="checkbox"><input type="checkbox" checked>¿Le gustaría recibir novedades de Indian
+                Foodtruck?</label>
+
+            <input type="submit" value="Enviar formulario" class="enviar">
+            <input type="reset" value="Restablecer formulario" class="restablecer">
+        </form>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Abrimos los</th>
+
+                </tr>
+            </thead>
+            <tbody>
+
+                <tr>
+                    <td>Miércoles</td>
+
+                </tr>
+                <tr>
+                    <td>Jueves</td>
+                </tr>
+                <tr>
+                    <td>Viernes</td>
+                </tr>
+                <tr>
+                    <td>Sábados</td>
+
+                </tr>
+                <tr>
+                    <td>Domingos</td>
+
+                </tr>
+            </tbody>
+        </table>
+    </main>
+    <footer>
+        <img src="imagenes/logo blanco 200px.png">
+        <p class="copyright">&copy Copyright Indian Foodtruck - 2023</p>
+    </footer>
+</body>
+
+</html>
