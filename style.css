@@ -37,6 +37,11 @@ nav a:hover {
     text-decoration: underline;
 }
 
+footer {
+    text-align: center;
+    background: url(imagenes/bg.png.jpeg);
+    padding: 40px;
+}
 
 .copyright {
     color: #FFFFFF;
